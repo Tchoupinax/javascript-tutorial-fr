@@ -1,44 +1,46 @@
-# An Introduction to JavaScript
+# Introduction à JavaScript
 
-Let's see what's so special about JavaScript, what we can achieve with it and which other technologies play well with it.
+Découvrons ensemble ce qu'il y a de si spécial avec JavaScript, ce que nous pouvons faire avec ce langage et quelles autres technologies informatiques se marient bien avec lui.
 
-## What is JavaScript?
+**Notes du traducteur :** Certains termes sont difficilement traductibles car dans le développement informatiques les mots sont souvent les mêmes qu'en anglais et leurs traductions ne leur donnent pas totalement leurs sens. De ce fait, des traductions seront apportées le plus fidèlement possible mais les termes anglais seront gardés là où c'est nécessaire. Je ne serais trop vous conseiller de vous renseigner sur leurs sens et de les apprendre rapidement. ;)
 
-*JavaScript* was initially created to *"make webpages alive"*.
+## Qu'est-ce que JavaScript ?
 
-The programs in this language are called *scripts*. They can be written right in the HTML and execute automatically as the page loads.
+A la base, *JavaScript* a été créé pour *"rendre les pages vivantes"*.
 
-Scripts are provided and executed as a plain text. They don't need a special preparation or a compilation to run.
+Les programmes écrits dans ce langage sont appelés *scripts*. Ils peuvent être écrits directement dans la page HTML et sont exécutés automatiquement au fur et à mesure du chargement de la page.
 
-In this aspect, JavaScript is very different from another language called [Java](http://en.wikipedia.org/wiki/Java).
+Les scripts sont fournis et exécutés en tant que simple text brut. Ils n'ont pas besoin d'être compilés ou préparés pour être lancés.
 
-```smart header="Why <u>Java</u>Script?"
-When JavaScript was created, it initially had another name: "LiveScript". But Java language was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
+Sur ce point, JavaScript est très différent d'un autre langage de programmation appelé [Java](https://fr.wikipedia.org/wiki/Java_(langage)).
 
-But as it evolved, JavaScript became a fully independent language, with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
+```smart header="Pourquoi <u>Java</u>Script ?"
+Quand JavaScript a été créé, il portait un nom différent : "LiveScript". Seulement, Java était un langage très populaire à cette époque et il a été pensé que positionner ce nouveau langage en tant que "petit frère" de Java pourrait l'aider à devenir populaire.
+
+Mais au fil de son évolution, JavaScript est devenu un langage informatique totalement indépendant avec ses propres spécifications techniques, appelées [ECMAScript](https://fr.wikipedia.org/wiki/ECMAScript). A présent, le JavaScript n'a *absolument* rien à voir avec le Java. Souvenez-vous en !
 ```
 
-At present, JavaScript can execute not only in the browser, but also on the server, or actually on any device where there exists a special program called [the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
+Aujourd'hui, Javascript peut non seulement être exécuté par un navigateur, côté client, mais aussi par un server. Globalement, n'importe quel appareil informatique disposant d'un programme spécial appelé [moteur JavaScript](https://fr.wikipedia.org/wiki/Moteur_JavaScript) peut exécuter du JavaScript.
 
-The browser has an embedded engine, sometimes it's also called a "JavaScript virtual machine".
+Les navigateurs ont un moteur JavaScript intégré aussi appelé "machine virtuelle JavaScript".
 
-Different engines have different "codenames", for example:
+Il existe différents moteurs JavaScript : 
 
-- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome and Opera.
-- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
-- ...There are other codenames like "Trident", "Chakra" for different versions of IE, "ChakraCore" for Microsoft Edge, "Nitro" and "SquirrelFish" for Safari etc.
+- [V8](https://es.wikipedia.org/wiki/Chrome_V8)) -- dans Chrome et Opera.
+- [SpiderMonkey](https://fr.wikipedia.org/wiki/SpiderMonkey) -- dans Firefox.
+- ... il y a aussi d'autres noms comme "Trident", "Chakra" pour les différentes versions de IE, "ChakraCore" pour Microsoft Edge, "Nitro" et "SquirrelFish" pour Safari, etc.
 
-The terms above are good to remember, because they are used in developer articles on the internet. We'll use them too. For instance, if "a feature X is supported by V8", then it probably works in Chrome and Opera.
+Les termes énumérés ci-dessus sont utiles à retenir parce qu'ils sont utilisés dans de nombreux articles Internet sur le développement et nous les utiliserons aussi. Par exemple, si "une fonctionnalité X est supportée par V8", cela veut probablement dire qu'elle fonctionne sur Chrome et Opéra.
 
-```smart header="How do engines work?"
+```smart header="Comment les moteurs fonctionnent-t-ils ?"
 
-Engines are complicated. But the basics are easy.
+Les moteurs JavaScript sont compliqués mais les bases élémentaires sont faciles à comprendre.
 
-1. The engine (embedded if it's a browser) reads ("parses") the script.
-2. Then it converts ("compiles") the script to the machine language.
-3. And then the machine code runs, pretty fast.
+1. Le moteur JavaScript (embarqué s'il s'agit d'un navigateur) lit ("parse" en anglais) le script.
+2. Ensuite, il le convertit (Sorte de compilation) en langage machine.
+3. Enfin, le code machine est exécuté par la machine.
 
-The engine applies optimizations on every stage of the process. It even watches the compiled script as it runs, analyzes the data that flows through it and applies optimizations to the machine code based on that knowledge. At the end, scripts are quite fast.
+Le moteur optimise le script à chaque étape du processus. Il surveille même le script compilé lors de son exécution, analyse les données qui le traversent et applique des optimisations au code machine d'après ces analyses. Au final, les scripts sont assez rapides.
 ```
 
 ## What can in-browser JavaScript do?
