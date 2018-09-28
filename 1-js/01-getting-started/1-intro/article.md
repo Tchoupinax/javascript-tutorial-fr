@@ -26,7 +26,7 @@ Les navigateurs ont un moteur JavaScript intégré aussi appelé "machine virtue
 
 Il existe différents moteurs JavaScript : 
 
-- [V8](https://es.wikipedia.org/wiki/Chrome_V8)) -- dans Chrome et Opera.
+- [V8](https://es.wikipedia.org/wiki/Chrome_V8) -- dans Chrome et Opera.
 - [SpiderMonkey](https://fr.wikipedia.org/wiki/SpiderMonkey) -- dans Firefox.
 - ... il y a aussi d'autres noms comme "Trident", "Chakra" pour les différentes versions de IE, "ChakraCore" pour Microsoft Edge, "Nitro" et "SquirrelFish" pour Safari, etc.
 
@@ -43,31 +43,34 @@ Les moteurs JavaScript sont compliqués mais les bases élémentaires sont facil
 Le moteur optimise le script à chaque étape du processus. Il surveille même le script compilé lors de son exécution, analyse les données qui le traversent et applique des optimisations au code machine d'après ces analyses. Au final, les scripts sont assez rapides.
 ```
 
-## What can in-browser JavaScript do?
+## Que peut faire JavaScript dans un navigateur ?
 
-The modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.
+Le JavaScript moderne est un langage de programmation "sécurisé". Il ne fournit pas d'accès *bas niveau* au processeur ou à la mémoire vive, parce qu'il a été initialement créé pour les navigateurs et ceux-ci n'en ont pas besoin.
 
-The capabilities greatly depend on the environment that runs JavaScript. For instance, [Node.JS](https://wikipedia.org/wiki/Node.js) supports functions that allow JavaScript to read/write arbitrary files, perform network requests etc.
+Les capacités de JavaScript dépend de l'environnement qui l'exécute. Par exemple, [Node.JS](https://wikipedia.org/wiki/Node.js) supporte des fonctions qui permettent à JavaScript de de lire et d'écrire des fichiers, d'exécuter des requêtes sur le réseau, etc...
 
-In-browser JavaScript can do everything related to webpage manipulation, interaction with the user and the webserver.
+Le JavaScript inclus dans les navigateurs peut faire à peu près tout ce qui touche à la manipulation des pages internet (aussi nommé comme la manopulation du *DOM*), ainsi qu'interargir avec l'utilisateur et le serveur web.
 
-For instance, in-browser JavaScript is able to:
+Quelques points clés des capacités de JavaScript dans un navigateur :
 
-- Add new HTML to the page, change the existing content, modify styles.
-- React to user actions, run on mouse clicks, pointer movements, key presses.
-- Send requests over the network to remote servers, download and upload files (so-called [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) and [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) technologies).
-- Get and set cookies, ask questions to the visitor, show messages.
-- Remember the data on the client-side ("local storage").
+-  Ajouter du nouveau code HTML à une page, changer le contenu existant de la page, modifier des styles.
+- Réagir aux actions de l'utilisateur, déclencher des actions selon ses clics, ses mouvements de souris ou ses appuis sur les touches du clavier.
+- Envoyer des requêtes à travers le réseau à des serveurs distants, télécharger des données en aynchrone (technologies connues : [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) et [COMET](https://en.wikipedia.org/wiki/Comet_(programming))
+- Lire et écrire des cookies, poser des questions à l'utilisateur, afficher des messages.
+- Sauvegarder des données coté client (*"Local Storage"*)
 
-## What CAN'T in-browser JavaScript do?
+## Que ne peut pas faire JavaScript dans un navigateur ?
 
-JavaScript's abilities in the browser are limited for the sake of the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
+Les capacités du JavaScript dans un navigateur sont limitées pour assurer la sécurité de l'utilisateur. Le but est d'empêcher une page malveillante d'accéder à des données privées de l'utilisateur et de lui nuire.
 
-The examples of such restrictions are:
+Ci-dessous des exemples de ces restrictions :
 
-- JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS system functions.
+- JavaScript n'a pas accès au disque dur quand il est exécuté dans le navigateur. Ainsi, il ne peut lire ni écrire des fichiers sur le disque dur de l'ordinateur. Il ne peut pas non plus exécuter des programmes. Globalement, il n'a aucun accès aux fonctions système du système d'exploitation.
 
-    Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like "dropping" a file into a browser window or selecting it via an `<input>` tag.
+Les navigateurs modernes permettent de travailler avec des fichiers, mais l'accès est très limité et donné seulement dans le cas où l'utilisateur fait certaines actions comme de "lâcher" un fichier dans la fenêtre d'un navigateur ou en le sélectionnant par un tag `<input>`.
+
+Il existe des moyens d'interargir avec la caméra, le microphone ou d'autres appareils, mais ces utilisateurs demandent une permission explicite de l'utilisateur.
+
 
     There are ways to interact with camera/microphone and other devices, but they require a user's explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
 - Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from different sites (from a different domain, protocol or port).
