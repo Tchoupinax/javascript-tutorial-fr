@@ -11,7 +11,7 @@ LEVEL 3 -> Final traduction
 1-js
   01-getting-started
     1-intro
-      article.md LEVEL 1
+      article.md LEVEL 1 - END
 
 ## Translations
 
