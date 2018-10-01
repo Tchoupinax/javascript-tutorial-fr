@@ -4,14 +4,16 @@ This repository hosts the content of the Modern JavaScript Tutorial, published a
 
 ## Progression
 
-LEVEL 1 -> Literal traduction
-LEVEL 2 -> Better traduction
-LEVEL 3 -> Final traduction
+- LEVEL 1 -> Literal traduction
+- LEVEL 2 -> Better traduction
+- LEVEL 3 -> Final traduction
 
-1-js
-  01-getting-started
-    1-intro
-      article.md LEVEL 1 - END
+Percentage : 0%
+
+      1-js
+        01-getting-started  
+          1-intro
+            article.md - LEVEL 1 - END
 
 ## Translations
 
