@@ -14,6 +14,8 @@ Percentage : 0%
         01-getting-started  
           1-intro
             article.md - LEVEL 1 - END
+          2-code-editors
+            article.md - LEVEL 1 - END
 
 ## Translations
 

@@ -1,60 +1,56 @@
-# Code editors
+# Les éditeurs de code
 
-A code editor is the place where programmers spend most of their time.
+L'éditeur de code est le meilleur ami du développeur et l'endroit où il passe le plus clair de son temps.
 
-There are two archetypes: IDE and lightweight editors. Many people feel comfortable choosing one tool of each type.
+Il y a deux archétypes d'éditeurs : les IDE et les éditeurs de texte légers. Beaucoup de personnes se sentent à l'aise en choissant un éditeur de chaque type.
 
 ## IDE
 
-The term [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) means a powerful editor with many features that usually operates on a "whole project". As the name suggests, that's not just an editor, but a full-scale "development environment".
+Le terme [IDE](https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement) (**I**ntegrated **D**evelopment **E**nvironment) désigne un éditeur puissant comportant de nombreuses fonctionnalités qui sont utilisées tout au long d'un projet. Comme le nom le suggère, ce n'est pas un simple éditeur, mais tout un environnement de développement pour épauler le développeur.
 
-An IDE loads the project (can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), integrates with a version management system (like [git](https://git-scm.com/)), a testing environment and other "project-level" stuff.
+Un IDE charge le projet (qui peut comporter de nombreux fichiers), permet la navigation entre les fichiers qui le compose, fournit une autocomplétion basée sur l'ensemble du projet (et pas juste pour le fichier actuellement ouvert), inclut souvent un système de gestion de version (comme [git](https://git-scm.com/)), un environnment de test et d'autres outils pour mieux gérer son projet.
 
-If you haven't considered selecting an IDE yet, look at the following variants:
+Si vous n'avez jamais encore réfléchi à essayer un IDE, vous pouvez regardez les logiciels suivants : 
 
-- [WebStorm](http://www.jetbrains.com/webstorm/) for frontend development and other editors of the same company if you need additional languages (paid).
-- [Visual Studio Code](https://code.visualstudio.com/) (free).
-- [Netbeans](http://netbeans.org/) (paid).
+- [WebStorm](http://www.jetbrains.com/webstorm/) pour les développeurs front-end. L'entreprise propose plein d'autres IDE pour toute sorte de langages (payant).
+- [Netbeans](http://netbeans.org/) (payant).
 
-All of the IDEs except cross-platform.
+Pour Windows, il y a aussi l'IDE "[Visual Studio](https://visualstudio.microsoft.com/)", à ne pas confondre avec "Visual Studio Code" (VSCode). "Visual Studio" est un IDE payant très puissant adapté au développement sur la plateform .NET et uniquement disponible sur Windows. Une version gratuite de ce logiciel est disponible en tant que [Visual Studio Community](https://www.visualstudio.com/vs/community/).
 
-For Windows, there's also a "Visual Studio" editor, don't mess it with "Visual Studio Code". "Visual Studio" is a paid and actually very powerful Windows-only editor, well-suited for .NET platform. A free version of it is called ([Visual Studio Community](https://www.visualstudio.com/vs/community/)).
+De nombreux IDE sont payants mais proposent une période d'essai. Leur coût sont généralement négligeables comparés au salaire d'un développeur qualifié, il ne suffit donc qu'à choisir celui qui vous convient.
 
-Many IDEs are paid, but have a trial period. Their cost is usually negligible compared to a qualified developer's salary, so just choose the best one for you.
+## Les éditeurs de texte
+
+Les éditeurs de texte ne sont pas aussi puissants que les IDE, mais ils sont simples, rapides et élégants.
+
+Ils sont principalement utilisés pour ouvrir et éditer un fichier très rapidement.
+
+La différence parincipale entre un éditeur de texte et un IDE est qu'un IDE fonctionne au niveau du projet tout entier, ce qui lui permet de charger davantage de données à l'ouverture du projet, d'analyser la structure du projet si besoin et d'utiliser ces données pour les fonctionnalités de développeurs (comme l'autocomplétion). Un éditeur de texte reste donc bien plus rapide quand il s'agit de n'éditer qu'un seul fichier.
+
+En pratique, les éditeurs de texte offrent un nombre important de plug-in incluant des analyseurs de syntaxe à l'échelle du projet et l'autocomplétion. De ce fait, il n'y a plus vraiment de bordure strict entre les éditeurs de textes "modernes" et les IDE.
+
+Les options suivantes méritent votre attention : 
+
+- [Visual Studio Code](https://code.visualstudio.com/) (multi-plateform, gratuit).
+- [Atom](https://atom.io/) (multi-plateform, gratuit).
+- [Sublime Text](http://www.sublimetext.com) (multi-plateform, logiciel contributif).
+- [Notepad++](https://notepad-plus-plus.org/) (Windows, grauit).
+- [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) sont aussi très cools, si vous savez comment les uiliser... ;)
+
+## Mes favoris
+
+La préférence personnelle de l'auteur est d'avoir les deux : un IDE pour les projets et un éditeur de texte rapide et simple pour éditer les fichiers à la volée.
+
+J'utilise : 
+
+- [WebStorm](http://www.jetbrains.com/webstorm/) pour JS, et s'il y a un plus d'un lanage dans le projet, je passe sur un autre logiciel de Jetbrains.
+- Comme éditeur de texte -- [Sublime Text](http://www.sublimetext.com) ou [Atom](https://atom.io/).
 
 
+## Ne discutons pas
 
-## Lightweight editors
+Les éditeurs dans les listes précédents sont ceux que mes amis, que je considère de bons développeurs, et moi utilisons depuis longtemps et nous en sommes très contents.
 
-"Lightweight editors" are not as powerful as IDEs, but they're fast, elegant and simple.
+Il y a bien d'autres éditeurs géniaux dans notre vaste monde. Choisissez celui que vous aimez le plus.
 
-They are mainly used to instantly open and edit a file.
-
-The main difference between a "lightweight editor" and an "IDE" is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file.
-
-In practice, lightweight editors may have a lot of plugins including directory-level syntax analyzers and autocompleters, so there's no strict border between a lightweight editor and an IDE.
-
-The following options deserve your attention:
-
-- [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
-- [Atom](https://atom.io/) (cross-platform, free).
-- [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
-- [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
-- [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool, if you know how to use them.
-
-## My favorites
-
-The personal preference of the author is to have both an IDE for projects and a lightweight editor for quick and easy file editing.
-
-I'm using:
-
-- [WebStorm](http://www.jetbrains.com/webstorm/) for JS, and if there is one more language in the project, then I switch to one of the other Jetbrains offerings listed above.
-- As a lightweight editor -- [Sublime Text](http://www.sublimetext.com) or [Atom](https://atom.io/).
-
-## Let's not argue
-
-The editors in the lists above are those that either I or my friends who I consider good developers have been using for a long time and are happy with.
-
-There are other great editors in our big world. Please choose the one you like the most.
-
-The choice of an editor, like any other tool, is individual and depends on your projects, habits, personal preferences.
+Le choix d'un éditeur, comme le choix de n'importe quel outil, est individuel et dépend de vos projets, de vos habitudes et de vos préférences personnelles.
